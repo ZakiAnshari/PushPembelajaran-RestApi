@@ -1,0 +1,63 @@
+
+* Apa itu Backend Developer
+-> Dev yang tugas nya berkaitan dengan server (logic,database,dll)
+
+Tugas Backend
+-> Merancang database
+-> Merancang Alur Data/Aplikasi
+-> Menerima Request dari frond end dan memberikan responce ke frond end
+-> Membuat Api ( Jembatan Komunikasi antara frond end dan backend )
+-> Dll yang berkaitan dengan server database
+
+* Apa itu Api
+-> Application Programming Interface : Yang dapat menghubungkan satu aplikasi dengan aplikasi lainya
+
+* Jenis Api 
+-> SOAP Api : Open Source , siapapun bisa menggunakan Api tersebut
+-> RPC Api : Api Pribadi , hanya untuk pengunaan internal
+-> Websocket Api : Digunakan oleh pihak tertentu
+-> REST Api : ada beragam jenis data , sekali Request bisa dapat menggakses banyak data.
+
+* Konseb Api
+ Contoh seperti Analogi Restauran , Costumer sebagai Client , Waiter sebagai API , Kitchen sebagai database.
+ jadi website di bukak sama orang yaitu costumer masuk ke restorant trus dia pesan makanan lewat menu , Terus pangil Waiter sebagai Api, terus pergi ke dapur yaitu database , terus API kembalikan lagi ke Client.
+
+* Hal yang wajib di ketahui
+-> Format Json
+-> Http Status
+-> Laravel Dasar 
+-> Database,dbms,query,dll.
+
+
+ MEMBUAT API PORTAL BERITA
+* Setup Project dan database
+* Membuat table users dengan migration
+* Membuat tale posts dan Comments dengan migration
+* Membuat Data Dummi
+* Setting variable di postman
+* Setting Routes API 
+
+ API RESOURCE (COLLECTION) 
+* Apa itu API resource,cara install dan cara menggunakan api resource
+* Menggunakan API resource untuk return custom data
+* Contoh penggunaan API resource untuk custom returned data
+* Api resource detail
+* Eager Loading pada Api resource
+
+ Sanctum Authentication & API Token (Login Logout API)
+* Middleware Sanctum
+* Membuat Token Ketika Login
+* Menggunakan token untuk mengakses API
+* Revoke Token ketika Logout
+* Mendapatkan data user yang sedang login  (cara token mengenali siapa  yang lagi login )
+
+  Kesimpulan-> Fitur Authentication menggunakan Sanctum dimana konseb nya sederhana, kita bisa mengakses API yang terlindungi oleh Middleware kalau sudah login dan membawa token, kalau tidak login dan membawa token maka tidak di perbolehkan untuk mengakses Api tersebut, dan jika sudah login kita bisa menghapus token dengan menggunakan Token Revoke di logout
+
+ Create Update Delete (CRUD) Restful API
+* Preview tutorial dan create new user 
+* Merapikan Routes dan alur tutorial
+* Create artikel menggunakan API
+44.01 episode 5
+* Create artikel dengan author berbeda
+* Membuat route Update
+* Membuat Middleware untuk mencegah update data
